@@ -130,18 +130,25 @@ q(t) = a<sub>0</sub> + a<sub>1</sub> t + a<sub>2</sub> t<sup>2</sup> + a<sub>3</
 
 ---
 
-## ตำแหน่ง **q** คำนวณจากสมการพหุนาม:
+ตำแหน่ง **q** คำนวณจากสมการพหุนาม:
+
+<p>
 q(t) = a<sub>0</sub> + a<sub>1</sub> t + a<sub>2</sub> t<sup>2</sup> + a<sub>3</sub> t<sup>3</sup> + a<sub>4</sub> t<sup>4</sup> + a<sub>5</sub> t<sup>5</sup>
+</p>
 
----
 
-## ความเร็ว **q<sub>d</sub>** คำนวณจากอนุพันธ์ลำดับแรกของสมการตำแหน่ง:
+ความเร็ว **q<sub>d</sub>** คำนวณจากอนุพันธ์ลำดับแรกของสมการตำแหน่ง:
+
+<p>
 q<sub>d</sub>(t) = a<sub>1</sub> + 2a<sub>2</sub> t + 3a<sub>3</sub> t<sup>2</sup> + 4a<sub>4</sub> t<sup>3</sup> + 5a<sub>5</sub> t<sup>4</sup> 
+</p>
 
----
+ความเร่ง**q<sub>dd</sub>** คำนวณจากอนุพันธ์ลำดับที่สองของสมการตำแหน่ง
 
-## ความเร่ง**q<sub>dd</sub>** คำนวณจากอนุพันธ์ลำดับที่สองของสมการตำแหน่ง
+<p>
 q<sub>d</sub>(t) = 2a<sub>2</sub> + 6a<sub>3</sub>t+ 12a<sub>4</sub> t<sup>2</sup> + 20a<sub>5</sub> t<sup>2</sup> 
+</p>
+
 ---
 
 
