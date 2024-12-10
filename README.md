@@ -36,7 +36,7 @@
 <p> 2.3 เพื่อศึกษาการวางแผนเส้นทางและการควบคุมการเคลื่อนที่ของ Backhoe โดยออกแบบ Trajectory Planning สำหรับการกำหนดเส้นทางและตำแหน่งในการเคลื่อนที่ของแขนกล</p>
 
 <h2>System overview</h2>
-![System diagram](System diagram1.png)
+![System diagram](Picture/System diagram.png)
 
 </body>
 </html>
