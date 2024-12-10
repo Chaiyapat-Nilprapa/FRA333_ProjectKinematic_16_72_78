@@ -67,7 +67,7 @@
 ## การคำนวณเมทริกซ์การแปลง (Transformation Matrix)
 เพื่อคำนวณตำแหน่งและการหมุนของปลายแขนกล (End Effector) จะใช้ **เมทริกซ์การแปลง (Transformation Matrix)** ซึ่งคำนวณทีละข้อต่อโดยมีสูตรดังนี้:
 
-![System diagram](Picture/FK.png)
+![Transformation Matrix](Picture/FK.png)
 
 โดย:
 - **A<sub>i</sub>**: เป็นเมทริกซ์การแปลงของข้อต่อ `i` ที่แสดงการแปลงพิกัดจากข้อต่อ `i-1` ไปยังข้อต่อ `i`
@@ -91,6 +91,7 @@ T = A<sub>1</sub> × A<sub>2</sub> × A<sub>3</sub> × … × A<sub>n</sub>
 ## บทนำ
 ---
 # Trajectory Planning
+![Trjectory Planning](Picture/Traject.png)
 
 ทางผู้จัดทำได้เลือกใช้ quintic polynomial trajectory เนื่องจากเป็นสมการพหุนามดีกรีที่ 5 ซึ่งสามารถคำนวณตำแหน่ง (q) ความเร็ว (q<sub>d</sub>) และความเร่ง (q<sub>dd</sub>) ของจุดที่ต้องการเคลื่อนที่ได้อย่างราบรื่นในช่วงเวลาที่กำหนด T โดยอ้างอิงจากเงื่อนไขที่กำหนดไว้ในจุดเริ่มต้นและจุดสิ้นสุด
 
@@ -150,7 +151,5 @@ q<sub>d</sub>(t) = 2a<sub>2</sub> + 6a<sub>3</sub>t+ 12a<sub>4</sub> t<sup>2</su
 </p>
 
 ---
-
-
 </body>
 </html>
