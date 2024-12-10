@@ -89,6 +89,11 @@ T = A<sub>1</sub> × A<sub>2</sub> × A<sub>3</sub> × … × A<sub>n</sub>
 ---
 # Inverse kinematics
 ## บทนำ
+
+---
+# Dynamic 
+## บทนำ
+
 ---
 # Trajectory Planning
 ![Trjectory Planning](Picture/Traject.png)
@@ -168,7 +173,7 @@ q<sub>d</sub>(t) = 2a<sub>2</sub> + 6a<sub>3</sub>t+ 12a<sub>4</sub> t<sup>2</su
 อินพุต (Inputs):
 
 - **q**: ตำแหน่ง ณ เวลาที่กำหนด (t)  
-- **q_d**: ความเร็ว ณ เวลาที่กำหนด (t)  
+- **q<sub>d</sub>**: ความเร็ว ณ เวลาที่กำหนด (t)  
 
 เอาต์พุต (Outputs):
 
@@ -182,7 +187,9 @@ Revolute joints control:
 - ประกอบด้วยตัวควบคุม **PID สำหรับตำแหน่ง (Position PID)** และ **PID สำหรับความเร็ว (Velocity PID)**  
 - รับสัญญาณความคลาดเคลื่อน (error) จากข้อมูลจริงที่ได้จากแบบจำลอง พร้อมทั้งนำค่าแรงที่ได้จากการคำนวณไดนามิกมาประกอบการควบคุม  
 - ให้ผลลัพธ์สุดท้ายอยู่ในรูปของแรงบิด (**Torque**)
+
 ![Revolute joints control](Picture/Revolute.png)
+
 ---
 
 Prismatic joints control:
@@ -198,8 +205,14 @@ Prismatic joints control:
 โดย:
 - **b**: ความยาวด้านตรงข้ามมุม B  
 - **a** และ **c**: ความยาวของด้านที่อยู่ติดกับมุม B  
-- **B**: มุมระหว่างด้าน a และ c  
+- **B**: มุมระหว่างด้าน a และ c
+  
 ![Prismatic joints control](Picture/Prismatic.png)
 
+---
+# DOF model 
+## บทนำ
+
+---
 </body>
 </html>
