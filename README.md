@@ -182,7 +182,7 @@ Revolute joints control:
 - ประกอบด้วยตัวควบคุม **PID สำหรับตำแหน่ง (Position PID)** และ **PID สำหรับความเร็ว (Velocity PID)**  
 - รับสัญญาณความคลาดเคลื่อน (error) จากข้อมูลจริงที่ได้จากแบบจำลอง พร้อมทั้งนำค่าแรงที่ได้จากการคำนวณไดนามิกมาประกอบการควบคุม  
 - ให้ผลลัพธ์สุดท้ายอยู่ในรูปของแรงบิด (**Torque**)
-
+![Revolute joints control](Picture/Revolute.png)
 ---
 
 Prismatic joints control:
@@ -199,7 +199,7 @@ Prismatic joints control:
 - **b**: ความยาวด้านตรงข้ามมุม B  
 - **a** และ **c**: ความยาวของด้านที่อยู่ติดกับมุม B  
 - **B**: มุมระหว่างด้าน a และ c  
-
+![Prismatic joints control](Picture/Prismatic.png)
 
 </body>
 </html>
