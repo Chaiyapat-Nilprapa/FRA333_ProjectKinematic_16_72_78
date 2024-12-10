@@ -241,8 +241,8 @@ Prismatic joints control:
 ---
 # DOF model 
 ## บทนำ
+[![Watch the video](Video/simulation.mp4.mp4)](Video/simulation.mp4.mp4)
 
-[คลิกที่นี่เพื่อดาวน์โหลดวิดีโอ](Video/simulation.mp4)
 
 
 
