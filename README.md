@@ -87,9 +87,35 @@ T = A<sub>1</sub> × A<sub>2</sub> × A<sub>3</sub> × … × A<sub>n</sub>
 2. **การหมุน (Rotation)** = ใช้ส่วนของเมทริกซ์การหมุน (Rotation Matrix) ที่อยู่ในมุมซ้ายบน ขนาด 3×3
 
 ---
-# Inverse kinematics
-## บทนำ
+# Inverse Kinematics
 
+การคำนวณ Inverse Kinematics เป็นการหาค่ามุมของแต่ละข้อต่อที่สอดคล้องกับตำแหน่งปลายมือ (End Effector) ที่กำหนด โดยอ้างอิงจาก Forward Kinematics เพื่อให้ได้ค่ามุมที่เหมาะสมสำหรับแต่ละข้อต่อ โดยสามารถคำนวณตำแหน่งของแต่ละข้อต่อได้ดังนี้:
+
+---
+
+สมการการคำนวณมุมข้อต่อ:
+- Θ<sub>1</sub> = atan2(p<sub>y</sub>, p<sub>x</sub>)
+- Θ<sub>2</sub> = atan2(sinΘ<sub>2</sub>, cosΘ<sub>2</sub>)
+- Θ<sub>3</sub> = atan2(sinΘ<sub>3</sub>, cosΘ<sub>3</sub>)
+- Θ<sub>4</sub> = atan2(N<sub>Z</sub>, O<sub>Z</sub>) - Θ<sub>2</sub> - Θ<sub>3</sub>
+
+---
+
+โดยที่
+- sinΘ<sub>2</sub> = (BC - AD) / (C<sup>2</sup> + D<sup>2</sup>)
+- cosΘ<sub>2</sub> = √(1 - sin<sup>2</sup>Θ<sub>2</sub>)
+
+- cosΘ<sub>3</sub> = (A<sup>2</sup> + B<sup>2</sup> - L<sub>2</sub><sup>2</sup> - L<sub>3</sub><sup>2</sup>) / (2 × L<sub>2</sub> × L<sub>3</sub>)
+- sinΘ<sub>3</sub> = √(1 - cos<sup>2</sup>Θ<sub>3</sub>)
+
+---
+
+เเละ
+- A = p<sub>x</sub> × cosΘ<sub>1</sub> + p<sub>y</sub> × sinΘ<sub>1</sub> - a<sub>1</sub> - L<sub>4</sub>
+- B = p<sub>z</sub> - (d<sub>1</sub> + L<sub>1</sub>) - L<sub>4</sub>
+- C = L<sub>2</sub> + L<sub>3</sub> × cosΘ<sub>3</sub>
+- D = L<sub>3</sub> × sinΘ<sub>3</sub>
+  
 ---
 # Dynamic 
 ## บทนำ
@@ -200,13 +226,16 @@ Prismatic joints control:
 - ให้ผลลัพธ์สุดท้ายอยู่ในรูปของแรง (**Force**)
   
 ---
-รูปแบบสมการกฎของโคไซน์: **b<sup>2</sup>** = **a<sup>2</sup>**  + **c<sup>2</sup>**  - **2accos(B)**
+รูปแบบสมการกฎของโคไซน์:
+- สำหรับ Prismatic joints 3: **b<sup>2</sup>** = **a<sup>2</sup>**  + **c<sup>2</sup>**  - **2accos(B)**
+- สำหรับ Prismatic joints 4: **a<sup>2</sup>** = **b<sup>2</sup>**  + **c<sup>2</sup>**  - **2bccos(A)**
 
 โดย:
 - **b**: ความยาวด้านตรงข้ามมุม B  
 - **a** และ **c**: ความยาวของด้านที่อยู่ติดกับมุม B  
 - **B**: มุมระหว่างด้าน a และ c
-  
+
+![Cosin](Picture/Cosin.png)
 ![Prismatic joints control](Picture/Prismatic.png)
 
 ---
