@@ -39,10 +39,19 @@
 
 ![System diagram](Picture/System%20diagram.png)
 
+# วิธีการใช้งาน
+- โหลดไฟล์ที่มีชื่อว่า **Test_simulation_model_backhoe**
+- กำหนดตำเเหน่ง **(x,y,z)** ก่อนเข้าบล็อก **IK_Simulink** เเละกด **RUN** ระบบ
+![Input](Picture/Input.png)
 
-# Forward Kinematic
+- สามารถอ่านค่าเอาท์พุตที่ออกมาได้จาก **Display** โดยเเสดงข้อมูล(ตำเเหน่ง ความเร็ว ความเร่ง เเละเเรงบิดที่เกิดขึ้น) เพื่อเปรียบเทียบระหว่าง **"ผลที่คำนวนได้"** กับ **"ค่าที่เกิดขึ้นจริง"**
+![Output](Picture/Output.png)
 
-## บทนำ
+
+
+# วิธีการทำงานของระบบ
+
+## Forward Kinematic
 โปรเจคนี้เป็นการคำนวณตำแหน่งปลายมือ (End Effector) ของแขนกล โดยการกำหนดค่ามุมของแต่ละข้อต่อ (Joint Angles) ด้วยหลักการ **Forward Kinematics** ซึ่งใช้หลักการ Denavit-Hartenberg (DH) ในการกำหนดพิกัดเชิงเส้นและเชิงมุมสำหรับแต่ละข้อต่อในระบบ Open Loop Kinematic Chain
 
 พารามิเตอร์ DH ที่ใช้ในการคำนวณและสร้างแบบจำลองการเคลื่อนที่ ประกอบด้วย 4 พารามิเตอร์ต่อข้อต่อ 1 จุด หรือ 1 ลิงค์ ดังนี้:
@@ -87,7 +96,7 @@ T = A<sub>1</sub> × A<sub>2</sub> × A<sub>3</sub> × … × A<sub>n</sub>
 2. **การหมุน (Rotation)** = ใช้ส่วนของเมทริกซ์การหมุน (Rotation Matrix) ที่อยู่ในมุมซ้ายบน ขนาด 3×3
 
 ---
-# Inverse Kinematics
+## Inverse Kinematics
 
 การคำนวณ Inverse Kinematics เป็นการหาค่ามุมของแต่ละข้อต่อที่สอดคล้องกับตำแหน่งปลายมือ (End Effector) ที่กำหนด โดยอ้างอิงจาก Forward Kinematics เพื่อให้ได้ค่ามุมที่เหมาะสมสำหรับแต่ละข้อต่อ โดยสามารถคำนวณตำแหน่งของแต่ละข้อต่อได้ดังนี้:
 
@@ -117,7 +126,7 @@ T = A<sub>1</sub> × A<sub>2</sub> × A<sub>3</sub> × … × A<sub>n</sub>
 - D = L<sub>3</sub> × sinΘ<sub>3</sub>
   
 ---
-# Dynamic 
+## Dynamic 
 ## บทนำ
 
 ---
@@ -240,7 +249,7 @@ Prismatic joints control:
 
 ---
 # DOF model 
-## บทนำ
+
 [![simulation](simulation2.mp4)](simulation2.mp4)
 
 <video width="600" controls>
