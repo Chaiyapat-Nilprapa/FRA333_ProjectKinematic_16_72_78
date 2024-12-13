@@ -295,14 +295,11 @@ Prismatic joints control:
 ![Prismatic joints control](Picture/Prismatic.png)
 
 ---
-# 4 DOF model 
+# DOF model 
 
-[![simulation](simulation2.mp4)](simulation2.mp4)
+ตัวอย่างผลลัพธ์ที่เกิดขึ้นจากระบบ
 
-<video width="600" controls>
-  <source src="simulation2.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the video](Picture/Final_Test.png)](https://youtu.be/_-PzLlbp75s)
 
 
 ---
