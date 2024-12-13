@@ -295,10 +295,12 @@ Prismatic joints control:
 ![Prismatic joints control](Picture/Prismatic.png)
 
 ---
-# DOF model 
+# Model 
+
+โครงสร้างโมเดล
+![Simscape](Picture/simscape_4%20DoF.png)
 
 ตัวอย่างผลลัพธ์ที่เกิดขึ้นจากระบบ
-
 [![Watch the video](Picture/Final_Test.png)](https://youtu.be/_-PzLlbp75s)
 
 
