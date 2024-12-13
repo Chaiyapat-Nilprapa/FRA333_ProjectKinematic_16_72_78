@@ -295,7 +295,7 @@ Prismatic joints control:
 ![Prismatic joints control](Picture/Prismatic.png)
 
 ---
-# DOF model 
+# 4 DOF model 
 
 [![simulation](simulation2.mp4)](simulation2.mp4)
 
